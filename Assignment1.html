@@ -1,0 +1,531 @@
+<html>
+    <head>
+        <title>
+            One-Click Pick
+        </title>
+        <link rel="stylesheet" href="./assignment1STYLE.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script>
+            function stickyMenu(){
+                var sticky=document.getElementById('sticky');
+                if(window.pageXOffset > 220){
+                    sticky.classList.add('sticky');
+                }
+                else{
+                    sticky.classList.remove('sticky');
+                }
+            }
+            window.onscroll = function(){
+                stickyMenu();
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <div class="parallax">
+            <div class="page-title">
+                One-Click Pick
+            </div>
+        </div>
+        <div class="menu" id="sticky">
+            <ul class="menu-ul">
+                <a href="#On Sale" class="a-menu"><li>On Sale</li></a>
+                <a href="#Entertainment" class="a-menu"><li>Entertainment</li></a>
+                <a href="#Mobiles" class="a-menu"><li>Mobiles</li></a>
+                <a href="#Books" class="a-menu"><li>Books</li></a>
+                <a href="#Laptops" class="a-menu"><li>Laptops</li></a>
+            </ul>
+
+            <div class="search-box">
+                <form>
+                    <input type="text" placeholder="Search..." name="search" class="search-input">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+
+<!-------Home Page Begins-->
+        <div class="container">
+            <a href="#On Sale">
+                <div class="categories">
+                    <img src="./sale.jpg" alt="">
+                    <div class="image-title">On Sale</div>
+                </div>
+            </a>
+
+            <a href="#Entertainment">
+                <div class="categories">
+                    <img src="./Entertainment.jpg" alt="">
+                    <div class="image-title">Entertainment</div>
+                </div>
+            </a>
+
+            <a href="#Mobiles">
+                <div class="categories">
+                    <img src="./mobile.jpg" alt="">
+                    <div class="image-title">Mobiles</div>
+                </div>
+            </a>
+
+            <a href="#Books">
+                <div class="categories">
+                    <img src="./books.jpg" alt="">
+                    <div class="image-title">Books</div>
+                </div>
+            </a>
+
+            <a href="#Laptops">
+                <div class="categories">
+                    <img src="./laptops.jpg" alt="">
+                    <div class="image-title">Laptops</div>
+                </div>
+            </a>
+        </div>
+
+<!------------Deal Begins Here-->
+
+        <div class="deals-container" id="deals">
+            <div class="parallax">
+                <div class="title">DEALS
+                </div>
+
+                <div class="deal">
+                    Save 20% on min-purchase of $120 on Electronic Products
+                    <button class="coupon-btn">Add Coupon</button>
+                </div>
+
+                <div class="deal">
+                    Save 10% on min-purchase of $120 on Woman's Collection
+                    <button class="coupon-btn">Add Coupon</button>
+                </div>
+
+                <div class="deal">
+                    Save 15% on min-purchase of $120 on Man's Collection
+                    <button class="coupon-btn">Add Coupon</button>
+                </div>
+
+            </div>
+        </div>
+
+<!------------Deal Ends Here-->
+
+<!------------Sale Begins Here-->
+
+<div class="deals-container" id="Sale">
+    <div class="parallax">
+        <div class="title">On Sale</div>
+    </div>
+
+    <div class="items">
+        <div class="images">
+            <img src="./boysSale.jpg" alt="" class="item-image-size">
+        </div>
+
+        <div class="description">
+            <b>Man's Collection on Sale</b>
+            <div class="item-select">
+                Price : $14.99
+            </div>
+            <label for="">Qty:</label>
+            <select name="" id="" class="item-select">
+                <option value="">$13.67</option>
+                <option value="">$13.85</option>
+                <option value="">$12.54</option>
+                <option value="">$14.58</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="images">
+            <img src="./girlsSale.jpg" alt="" class="item-image-size">
+        </div>
+
+        <div class="description">
+            <b>Woman's Collection on Sale</b>
+            <div class="item-select">
+                Price : $17.99
+            </div>
+            <label for="">Qty:</label>
+            <select name="" id="" class="item-select">
+                <option value="">$17.67</option>
+                <option value="">$18.85</option>
+                <option value="">$16.54</option>
+                <option value="">$17.58</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="images">
+            <img src="./ElectronicsSale.jpg" alt="" class="item-image-size">
+        </div>
+
+        <div class="description">
+            <b>Electronics</b>
+            <div class="item-select">
+                Price : $145.99
+            </div>
+            <label for="">Qty:</label>
+            <select name="" id="" class="item-select">
+                <option value="">$123.67</option>
+                <option value="">$142.85</option>
+                <option value="">$125.54</option>
+                <option value="">$135.58</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<!------------Sale Ends Here-->
+
+<!------------Entertainment Begins Here-->
+
+        <div class="deals-container" id="Entertainment">
+            <div class="parallax">
+                <div class="title">ENTERTAINMENT</div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="./videoGames.jpg" alt="" class="item-image-size">
+                </div>
+
+                <div class="description">
+                    <b>Video Games</b>
+                    <div class="item-select">
+                        Price : $89.99
+                    </div>
+                    <label for="">Qty:</label>
+                    <select name="" id="" class="item-select">
+                        <option value="">$70.67</option>
+                        <option value="">$83.85</option>
+                        <option value="">$72.54</option>
+                        <option value="">$84.58</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="./movies.jpg" alt="" class="item-image-size">
+                </div>
+
+                <div class="description">
+                    <b>Movies</b>
+                    <div class="item-select">
+                        Price : $10.99
+                    </div>
+                    <label for="">Qty:</label>
+                    <select name="" id="" class="item-select">
+                        <option value="">$7.67</option>
+                        <option value="">$9.85</option>
+                        <option value="">$8.54</option>
+                        <option value="">$7.58</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="images">
+                    <img src="./music.jpg" alt="" class="item-image-size">
+                </div>
+
+                <div class="description">
+                    <b>Music</b>
+                    <div class="item-select">
+                        Price : $3.99
+                    </div>
+                    <label for="">Qty:</label>
+                    <select name="" id="" class="item-select">
+                        <option value="">$2.67</option>
+                        <option value="">$1.85</option>
+                        <option value="">$2.54</option>
+                        <option value="">$3.58</option>
+                    </select><br/>
+                    <button class="buynow-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+<!------------Entertainment Ends Here-->
+
+<!------------Mobile Begins Here-->
+
+<div class="deals-container" id="mobiles">
+    <div class="parallax">
+        <div class="title">Mobiles</div>
+    </div>
+
+    <div class="items">
+        <div class="images">
+            <img src="./iphone.jpg" alt="" class="item-image-size">
+        </div>
+
+        <div class="description">
+            <b>IPhones</b>
+            <div class="item-select">
+                Price : $150.99
+            </div>
+            <label for="">Qty:</label>
+            <select name="" id="" class="item-select">
+                <option value="">$145.67</option>
+                <option value="">$156.85</option>
+                <option value="">$147.54</option>
+                <option value="">$130.58</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="images">
+            <img src="./samsung.jpg" alt="" class="item-image-size">
+        </div>
+
+        <div class="description">
+            <b>Samsung</b>
+            <div class="item-select">
+                Price : $70.99
+            </div>
+            <label for="">Qty:</label>
+            <select name="" id="" class="item-select">
+                <option value="">$76.67</option>
+                <option value="">$59.85</option>
+                <option value="">$58.54</option>
+                <option value="">$67.58</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="images">
+            <img src="./honor.jpg" alt="" class="item-image-size">
+        </div>
+
+        <div class="description">
+            <b>Honor</b>
+            <div class="item-select">
+                Price : $35.99
+            </div>
+            <label for="">Qty:</label>
+            <select name="" id="" class="item-select">
+                <option value="">$32.67</option>
+                <option value="">$31.85</option>
+                <option value="">$22.54</option>
+                <option value="">$23.58</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<!------------Mobiles Ends Here-->
+
+<!------------Books Begins Here-->
+
+<div class="deals-container" id="Books">
+    <div class="parallax">
+        <div class="title">Books</div>
+    </div>
+
+    <div class="items">
+        <div class="images">
+            <img src="./chemistryBooks.jpg" alt="" class="item-image-size">
+        </div>
+
+        <div class="description">
+            <b>Text Books</b>
+            <div class="item-select">
+                Price : $8.99
+            </div>
+            <label for="">Qty:</label>
+            <select name="" id="" class="item-select">
+                <option value="">$7.67</option>
+                <option value="">$3.85</option>
+                <option value="">$7.54</option>
+                <option value="">$8.58</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="images">
+            <img src="./novels.jpg" alt="" class="item-image-size">
+        </div>
+
+        <div class="description">
+            <b>Novels</b>
+            <div class="item-select">
+                Price : $10.99
+            </div>
+            <label for="">Qty:</label>
+            <select name="" id="" class="item-select">
+                <option value="">$7.67</option>
+                <option value="">$9.85</option>
+                <option value="">$8.54</option>
+                <option value="">$7.58</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="images">
+            <img src="./history.jpg" alt="" class="item-image-size">
+        </div>
+
+        <div class="description">
+            <b>History Books</b>
+            <div class="item-select">
+                Price : $15.99
+            </div>
+            <label for="">Qty:</label>
+            <select name="" id="" class="item-select">
+                <option value="">$12.67</option>
+                <option value="">$14.85</option>
+                <option value="">$20.54</option>
+                <option value="">$23.58</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<!------------Books Ends Here-->
+
+<!----------Laptops Begins Here-->
+
+<div class="deals-container" id="Laptops">
+    <div class="parallax">
+        <div class="title">LAPTOPS</div>
+    </div>
+
+    <div class="items">
+        <div class="images">
+            <img src="./hp.jpg" alt="" class="item-image-size">
+        </div>
+
+        <div class="description">
+            <b>Pavillion</b>
+            <div class="item-select">
+                Price : $115.99
+            </div>
+            <label for="">Qty:</label>
+            <select name="" id="" class="item-select">
+                <option value="">$117.67</option>
+                <option value="">$118.85</option>
+                <option value="">$117.54</option>
+                <option value="">$114.58</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="images">
+            <img src="./dell.jpg" alt="" class="item-image-size">
+        </div>
+
+        <div class="description">
+            <b>dell</b>
+            <div class="item-select">
+                Price : $110.99
+            </div>
+            <label for="">Qty:</label>
+            <select name="" id="" class="item-select">
+                <option value="">$117.67</option>
+                <option value="">$119.85</option>
+                <option value="">$118.54</option>
+                <option value="">$117.58</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="images">
+            <img src="./intel.jpg" alt="" class="item-image-size">
+        </div>
+
+        <div class="description">
+            <b>Intel</b>
+            <div class="item-select">
+                Price : $113.99
+            </div>
+            <label for="">Qty:</label>
+            <select name="" id="" class="item-select">
+                <option value="">$112.67</option>
+                <option value="">$111.85</option>
+                <option value="">$112.54</option>
+                <option value="">$113.58</option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<!------------Laptops Ends Here-->
+
+<!-------Home Page Ends-->
+
+<!-------Footer starts here-->
+
+<div class="parallax1">
+    <div class="footer">
+        <div class="quick-links">
+            <div>
+                Locations
+            </div>
+            <ul>
+                <li><a href="" class="a-links">Adress 1</a></li>
+                <li><a href="" class="a-links">Adress 2</a></li>
+                <li><a href="" class="a-links">Adress 3</a></li>
+            </ul>
+        </div>
+
+        <div class="quick-links">
+            <div>
+                Careers
+            </div>
+            <ul>
+                <li><a href="" class="a-links">Packing Staff</a></li>
+                <li><a href="" class="a-links">Delivery Agents</a></li>
+                <li><a href="" class="a-links">Shelf Fillers</a></li>
+            </ul>
+        </div>
+
+        <div class="quick-links">
+            <div>
+                Quick Links
+            </div>
+            <ul>
+                <li><a href="" class="a-links">Contact Us</a></li>
+                <li><a href="" class="a-links">FAQ</a></li>
+                <li><a href="" class="a-links">Help</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="copyrights">
+    © Copyright - All rights reserved | Maryam
+    <br/>
+    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+	<i class="fa fa-twitter" aria-hidden="true"></i>
+	<i class="fa fa-youtube-play" aria-hidden="true"></i>
+	<i class="fa fa-instagram" aria-hidden="true"></i>
+</div>
+
+<!-------Footer Ends here-->
+    </body>
+</html>
